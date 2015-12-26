@@ -1,0 +1,39 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="Program" mc:Ignorable="d" x:Class="WpfApplication1.MainWindow"
+        Title="Курсовая Работа" Height="800" Width="1100" Background="Gray">
+        
+    <Grid x:Name="add_operator" Height="659" VerticalAlignment="Top" Margin="0,0,-8,0">
+        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Поле для ввода функции" VerticalAlignment="Top" Height="35" Width="330" Margin="64,42,0,0" FontFamily="Times New Roman" FontSize="24" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="752,40,0,0" TextWrapping="Wrap" Text="Результат" VerticalAlignment="Top" RenderTransformOrigin="0.501,0.547" Height="35" Width="185" FontFamily="Times New Roman" FontSize="24" FontStyle="Italic"/>
+        <TextBlock x:Name="result" HorizontalAlignment="Left" Margin="773,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="164" FontFamily="Times New Roman" FontSize="24"><Run Text=" "/><LineBreak/><Run/></TextBlock>
+        
+        <Button x:Name="add_x" Content="Добавить переменную" HorizontalAlignment="Left" Margin="64,135,0,0" VerticalAlignment="Top" Width="183" FontFamily="Times New Roman" FontSize="18" Click="add_x_Click"/>
+        
+        <TextBlock x:Name="stq" HorizontalAlignment="Left" Margin="64,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="567" FontFamily="Times New Roman" FontSize="24"/>
+        
+        <ComboBox x:Name="operator1" HorizontalAlignment="Left" Margin="340,135,0,0" VerticalAlignment="Top" Width="200" Height="25" FontFamily="Times New Roman" FontSize="18">
+            <ListBoxItem Content="Add or"/>
+            <ListBoxItem Content="Add and"/>
+            <ListBoxItem Content="Add no"/>
+            <ListBoxItem Content="Add xor"/>
+        </ComboBox>
+
+        <Button x:Name="add_operator1" Content="Add" HorizontalAlignment="Left" Margin="576,135,0,0" VerticalAlignment="Top" Width="55" Height="25" Click="Button_Click" FontFamily="Times New Roman" FontSize="18"/>
+        <Button x:Name="rev" Content="Undo" HorizontalAlignment="Left" Margin="576,185,0,0" VerticalAlignment="Top" Width="55" FontFamily="Times New Roman" FontSize="18" Click="rev_Click"/>
+        <Button x:Name="doans" Content="Calculate" HorizontalAlignment="Left" Margin="752,135,0,0" VerticalAlignment="Top" Width="139" Height="25" FontFamily="Times New Roman" FontSize="18" Click="doans_Click" d:IsHidden="True"/>
+
+        <StackPanel Margin="0,211,894,0" Orientation="Vertical" x:Name="ManyTextboxes" />
+
+        <StackPanel Orientation="Vertical" x:Name="ManyXprops" Margin="0,211,671,0" />
+
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="54" Margin="752,167,0,0" VerticalAlignment="Top" Width="59" FontFamily="Times New Roman" FontSize="21.333">
+            <MenuItem x:Name="Save" Header="Save" Click="MenuItem_Click"/>
+            <MenuItem x:Name="Load" Header="Load" Click="MenuItem_Click_1"/>
+        </Menu>
+        <Image x:Name="ЛЩЩЩ_jpg" Margin="460,382,68,0" Source="ЛЩЩЩ.jpg" Stretch="Fill"/>
+
+    </Grid>
+</Window>
